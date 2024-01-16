@@ -1,0 +1,8 @@
+name: Prepare Component B dependencies
+description: Prepare Component B dependencies
+runs:
+  using: "composite"
+  steps:
+    - name: Prepare Deps
+      run: echo "Hello, deps are ready"
+      shell: bash
