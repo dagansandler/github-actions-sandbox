@@ -1,4 +1,4 @@
-name: Build Component A on PR
+name: Dispatch Build Component A
 
 on:
   workflow_dispatch:
