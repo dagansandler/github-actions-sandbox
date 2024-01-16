@@ -16,4 +16,4 @@ concurrency:
 
 jobs:
   build_comp_A:
-    uses: ./.github/workflows/compA/build.yaml
+    uses: ./.github/workflows/build.yaml

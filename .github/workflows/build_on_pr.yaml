@@ -5,7 +5,7 @@ on:
     types: [ opened, synchronize, reopened ]
     paths:
       - '.github/actions/comp_A_actions/**'
-      - '.github/workflows/compA/**'
+      - '.github/workflows/**'
 
 concurrency:
   # github.workflow: the workflow name is used to generate the concurrency group (e.g. Workflow 1).
@@ -20,4 +20,4 @@ concurrency:
 
 jobs:
   build_comp_A:
-    uses: ./.github/workflows/compA/build.yaml
+    uses: ./.github/workflows/build.yaml
