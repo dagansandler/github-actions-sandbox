@@ -2,11 +2,11 @@ name: Validate code in the merge queue
 
 on:
   merge_group:
+  pull_request:
 
 jobs:
-  build-comp-A:
-    uses: ./.github/workflows/build.yaml
   validate-pr:
+    if: ${{ github.event_name == 'merge_group' }}
     runs-on: ubuntu-latest
     steps:
       - name: Run slow CI (emulated by a long sleep)
